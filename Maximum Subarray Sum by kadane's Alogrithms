@@ -1,0 +1,16 @@
+class Main {
+  public static void main(String[] args) {
+    int arr[]={3,-4,5,4,-1,7,-8};
+    int maxsum=Integer.MIN_VALUE;
+    int csum=0;
+    for(int i=0;i<arr.length;i++){
+        csum=csum+arr[i];
+        maxsum=Math.max(csum,maxsum);
+        if(csum<0){
+            csum=0;
+            
+        }
+    }
+    System.out.println(maxsum);
+  }
+}
